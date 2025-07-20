@@ -1,0 +1,656 @@
+@media(max-width: 990px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    @function convert($px) {
+        @return ($px/ 3.90) * 1vw;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+        body {
+            &.navOpen {
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+                &::before {
+                    content: "";
+                    background-color: rgba(0, 0, 0, 0.425);
+                    opacity: 1;
+                    display: block;
+                    width: 100%;
+                    height: 100vh;
+                    position: absolute;
+                    z-index: 1;
+                }
+                header{
+                    .container{
+                        .header-holder{
+                            .btns{
+                                transform: translate(0 , 0);
+                                transition: 0.5s ease-in;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+           width: convert(360);
+        }
+
+        header {
+            background: #141C25;
+            height: convert(58);
+
+            .container {
+
+                .header-holder {
+                    display: flex;
+                    padding-top: convert(19);
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .hamburger {
+                        background-color: #141C25;
+                        width: convert(25);
+                        height: 4.410256vw;
+                        display: flex;
+                        flex-direction:column;
+                        gap: convert(5);
+
+
+                        span {
+                            background-color: #FFF;
+                            display: block;
+                            width: convert(25);
+                            height: convert(3);
+                            border-radius: convert(10);
+                           
+                        }
+
+                    }
+
+                    .logo {
+                        width: convert(116);
+
+                        img {
+                            width: 100%;
+
+                        }
+                    }
+
+                    .btns {
+                        background-color: #141C25;
+                        z-index: 100;
+                        height: 100vh;
+                        width: 60%;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        padding-left: 6.846154vw;
+                        padding-right: 9.846154vw;
+                        padding-top: convert(15);
+                        transform: translate(110%, 0);
+
+                        .phone-logo {
+                            text-align: center;
+                            padding-bottom: convert(20);
+                            border-bottom: convert(2) solid #2d2f39;
+                            margin-bottom: convert(20);
+
+                            img {
+                                height: 10.692308vw;
+
+                            }
+                        }
+
+                        .head-list {
+                            background-color: #141C25;
+                            position: relative;
+
+                            svg {
+                                height: convert(20);
+                                width: convert(20);
+                            }
+
+                            li {
+                                margin-bottom: convert(10);
+                                list-style-type: none;
+                                display: flex;
+
+                                .dropdown {
+                                    button {
+                                        margin: auto;
+                                        color: #FFF;
+                                        font-family: "Roboto", sans-serif;
+                                        font-size: convert(13.338);
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        background-color: #141C25;
+                                        border: none;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding:0;
+
+                                        &:hover,
+                                        &:focus,
+                                        &:active {
+                                            border: none;
+                                            outline: none;
+                                            box-shadow: none;
+
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    color: #FFF;
+                                    font-family: "roboto", sans-serif;
+                                    font-size: convert(13.338);
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    text-decoration: none;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: convert(10);
+                                    padding: convert(6);
+
+
+                                    &.log {
+
+                                        position: fixed;
+                                        bottom: 10vh;
+                                    }
+
+
+                                    &:hover,
+                                    &:active,
+                                    &:focus {
+                                        background-color: #2d2f39;
+                                        border-radius: convert(10);
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .contact {
+            .container {
+                .contact-holder {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &>div {
+                        width: 100%;
+                    }
+
+                    .form-div {
+                        order: 2;
+
+                        .texts {
+
+                            h2 {
+                                color: var(--black, #000);
+                                font-family: Graphik;
+                                font-size: convert(37.86);
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+
+
+                                span {
+                                    color: #226E65;
+                                }
+                            }
+
+                            p {
+                                color: #000;
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(12);
+                                font-style: normal;
+                                font-weight: 100;
+                                letter-spacing: convert(0.12);
+
+                                br {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .input {
+                            border-radius: convert(4);
+                            border: convert(0.701) solid var(--Gray-5, #E0E0E0);
+                            width: 100%;
+                            margin-bottom: convert(14.02);
+                            padding: convert(8) convert(14.02) convert(8) convert(14.02);
+
+
+
+                            select {
+
+                                width: 100%;
+                                border: none;
+                                appearance: none;
+                                color: var(--black, #000);
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(12);
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: convert(16.827);
+                                /* 140.222% */
+                                letter-spacing: convert(0.12);
+
+                                &:hover,
+                                &:active,
+                                &:focus {
+                                    border: none;
+                                    outline: none;
+                                }
+
+                            }
+
+
+                            input {
+                                width: 100%;
+                                border: none;
+                                outline: none;
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(12);
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: convert(16.827);
+                                /* 140.222% */
+                                letter-spacing: convert(0.12);
+                                color: var(--Gray-3, #000000);
+
+                                &::placeholder {
+                                    color: var(--Gray-3, #828282)
+                                }
+                            }
+                        }
+
+                        button {
+                            border-radius: convert(6);
+                            background: #226E65;
+                            border: none;
+                            outline: none;
+                            width: 100%;
+                            color: var(--white, #FFF);
+                            font-family: "Lato", sans-serif;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            padding: convert(9) convert(16.83) convert(9) convert(16.83);
+                            margin-bottom: convert(28.83);
+                        }
+                    }
+
+                    .icons-contact {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: convert(35.06);
+                        margin-bottom: convert(44);
+
+
+                        .phone {
+                            display: flex;
+                            gap: convert(10.52);
+                            justify-content: center;
+                            align-items: center;
+                            line-height: convert(14.022);
+
+                            .icon {
+                                width: convert(19.631);
+                                height: convert(19.631);
+                                line-height: 0;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .contact-no {
+                                p {
+                                    padding: 0;
+                                    margin: 0;
+                                    color: var(--black, #000);
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+
+
+                                }
+
+                                a {
+                                    color: #226E65;
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .email {
+                            display: flex;
+                            gap: convert(10.52);
+                            justify-content: center;
+                            align-items: center;
+                            line-height: convert(14.022);
+
+                            .icon {
+                                width: convert(19.631);
+                                height: convert(19.631);
+                                line-height: 0;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+
+                                }
+                            }
+
+                            .contact-mail {
+                                p {
+                                    padding: 0;
+                                    margin: 0;
+                                    color: var(--black, #000);
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+
+
+                                }
+
+                                a {
+                                    color: #226E65;
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    text-decoration: none;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .pic {
+                        background-image: url("../images/Frame.svg");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: convert(360);
+                        height: convert(112);
+                        margin-top: convert(15);
+                        padding-top: convert(30);
+                        padding-left: convert(12);
+                        order: 1;
+                        position: relative;
+                        margin-bottom: convert(30);
+
+                        .info {
+                            h3 {
+                                color: var(--Neutral-100, #FFF);
+                                font-family: Graphik;
+                                font-size: convert(20);
+                                font-style: normal;
+                                font-weight: 600;
+                                padding: 0;
+
+                            }
+
+                            p {
+                                color: #226E65;
+                                text-align: center;
+                                font-family: Graphik;
+                                font-size: convert(18);
+                                font-style: normal;
+                                font-weight: 500;
+                                border-radius: convert(106);
+                                border: convert(1) solid #FFF;
+                                background: #FFF;
+                                box-shadow: 0px convert(4) convert(5.3) 0px rgba(0, 0, 0, 0.25);
+                                padding: 0;
+                                width: max-content;
+                                padding-left: convert(10);
+                                padding-right: convert(10);
+
+                            }
+
+                            h2 {
+                                color: var(--Neutral-100, #FFF);
+                                text-align: center;
+                                text-shadow: 0px convert(4) 0px rgba(0, 0, 0, 0.25);
+                                font-family: Graphik;
+                                font-size: convert(16);
+                                font-style: normal;
+                                font-weight: 500;
+                                position: absolute;
+                                right: convert(8);
+                                top: convert(35);
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+        footer {
+
+            border-radius: convert(25) convert(25) 0px 0px;
+            background: #141C25;
+            padding-top: convert(26);
+            
+            .container {
+                
+                .contain-holder {
+                    padding-left: 6.512821vw;
+                    padding-right: convert(20);
+                    
+
+                    .ending {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-top: 22.384615vw;
+
+                        &>div {
+                            width: 100%;
+                        }
+                        
+                        .copy {
+                            order: 2;
+                            margin: auto;
+                            width: max-content;
+                            
+                            p {
+                                color: #FFF;
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(8.66);
+                                font-style: normal;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .list {
+                            order: 1;
+                            
+                            
+                            ul {
+                                display: flex;
+                                width: 100%;
+                                justify-content: space-between;
+                                padding: 0;
+                                
+                                li {
+                                    color: #FFF;
+                                    
+                                    &::marker {
+                                        font-size: convert(10);
+                                    }
+                                    
+                                    
+                                    a {
+                                        color: #FFF;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(10.169);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        text-decoration: none;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-holder {
+                        position: relative;
+
+                        .logo-pics {
+
+                            .logo {
+
+                                width: convert(222);
+                                height: convert(61);
+                                margin-bottom: convert(10);
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                            }
+
+                            .pics {
+                                position: absolute;
+                                top: calc(100% + 3vw);
+                                right: convert(56);
+
+
+                                .google {
+                                    width: convert(70.4);
+                                    height: convert(19.967);
+                                    margin-bottom: convert(11.01);
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .apple {
+                                    width: convert(70.4);
+                                    height: convert(19.967);
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .lists {
+                            display: flex;
+                            gap: convert(40);
+                            line-height: 8vw;
+
+
+                            ul {
+                                padding: 0;
+                                margin: 0;
+
+                                .special {
+                                    a {
+
+                                        color: #FFF;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(12.881);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-decoration: none;
+                                    }
+                                }
+
+                                li {
+                                    list-style-type: none;
+
+
+                                    a {
+                                        color: #A6A6A6;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(13.062);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-decoration: none;
+
+                                        &:hover,
+                                        &:active,
+                                        &:focus {
+                                            color: #FFF;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .li3 {
+                                position: absolute;
+                                display: flex;
+                                bottom: convert(-48);
+                                gap: convert(13.62);
+
+
+                                li {
+
+
+                                    a {
+                                        border-radius: convert(4.96);
+                                        border: convert(0.827) solid #161C28;
+                                        background: #226E65;
+                                        padding: convert(9.92) convert(9.92) convert(9.92) convert(9.92);
+
+                                        img {
+                                            width: convert(16.535);
+                                            height: convert(16.535);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}

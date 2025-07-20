@@ -1,0 +1,540 @@
+@media(min-width: 991px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    @function convert($px) {
+        @return ($px/ 12) * 1vw;
+    }
+
+    @font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/Graphik-Regular.ttf') format('truetype');
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+        .container {
+            margin: auto;
+            max-width: 84.0833333vw;
+        }
+
+        header {
+            background: #141C25;
+            height: convert(85.861);
+            margin-bottom: convert(99.14);
+
+            .container {
+
+                .header-holder {
+                    display: flex;
+                    padding-top: convert(23);
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .hamburger{
+                        display:none;
+                    }
+
+                    .logo {
+                        img {
+                            width: convert(148.655);
+                            height: convert(40.847);
+                        }
+                    }
+
+                    .btns {
+                        .logo{
+                            display: none;
+                        }
+
+                        .phone-logo{
+                            display: none;
+                        }
+                        .head-list {
+                            display: flex;
+                            align-items: center;
+                            gap: convert(40.85);
+
+                            li {
+                                list-style-type: none;
+                                
+                                svg{
+                                    display:none;
+                                }
+                                .dropdown{
+                                    button{
+
+                                        color: #787B7E;
+                                        font-family: "Roboto", sans-serif;
+                                        font-size: convert(13.338);
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        background-color: #141C25;
+                                        border:none;
+
+                                        &:hover,
+                                        &:focus,
+                                        &:active,
+                                        &:focus-visible,
+                                        &:focus-within{
+                                            border-color:none;
+                                            outline: none;
+                                            box-shadow: none;
+                                            
+                                        }
+                                    }
+                                }
+
+
+                                a {
+                                    text-decoration: none;
+                                    color: #787B7E;
+                                    font-family: "Roboto", sans-serif;
+                                    font-size: convert(13.338);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    svg{
+                                        display: none;
+                                    }
+                                    &:hover,
+                                    &:active,
+                                    &.focus {
+                                        color: #FFF;
+                                    }
+
+                                }
+
+                                .log {
+                                    border-radius: convert(7.688);
+                                    background: #226E65;
+                                    color: #FFF;
+                                    font-family:"Lato", sans-serif ;
+                                    font-size: convert(13.667);
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    padding: convert(10) convert(31.08) convert(10) convert(33);
+                                }
+
+                                .sign {
+                                    font-family:"Lato", sans-serif ;
+                                    border-radius: convert(7.688);
+                                    border: convert(1) solid #FFF;
+                                    padding: convert(10) convert(27) convert(10) convert(27);
+                                    background: transparent;
+                                    color: #FFF;
+                                    font-size: convert(13.667);
+                                    font-style: normal;
+                                    font-weight: 400;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .contact {
+            .container {
+                .contact-holder {
+                    display: flex;
+                    align-items: center;
+                    gap: convert(35.06);
+                    width: 100%;
+                    padding: convert(70.11) convert(105);
+                    padding-left: convert(105);
+                    border-radius: convert(35.056);
+                    background: var(--white, #FFF);
+                    box-shadow: 0px convert(67) convert(19) 0px rgba(0, 0, 0, 0.00), 0px convert(43) convert(17) 0px rgba(0, 0, 0, 0.01), 0px convert(24) convert(14) 0px rgba(0, 0, 0, 0.05), 0px convert(11) convert(11) 0px rgba(0, 0, 0, 0.09), 0px convert(3) convert(6) 0px rgba(0, 0, 0, 0.10);
+                    background: linear-gradient(90deg, #FFF 70%, #141C25 30%);
+                    margin-bottom: convert(100);
+
+                    .form-div {
+                        width: convert(382.106);
+
+                        .texts{
+
+                            h2 {
+                                color: var(--black, #000);
+                                font-family: Graphik;
+                                font-size: convert(37.86);
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+
+                                span {
+                                    color: #226E65;
+                                }
+                            }
+
+                            p {
+                                color: #000;
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(9.816);
+                                font-style: normal;
+                                font-weight: 500;
+
+                                br{
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .input {
+                            display: flex;
+                            width: 100%;
+                            height: convert(35.056);
+                            padding: convert(8.413) convert(14.022);
+                            align-items: center;
+                            border-radius: convert(4);
+                            border: convert(0.701) solid var(--Gray-5, #E0E0E0);
+                            margin-bottom: convert(14.02);
+                            color: var(--Gray-3, #828282);
+                            font-family: "Lato", sans-serif;
+                            font-size: convert(9.816);
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: convert(16.827); /* 171.429% */
+                            letter-spacing: convert(0.098);
+
+
+                            select {
+                                outline: none;
+                                border: none;
+                                appearance: none;
+                                width: 100%;
+                                background-image: url("../images/carat-down.svg");
+                                background-repeat: no-repeat;
+                                background-position: right;
+                                background-size: convert(8.413) convert(4.207);
+                            }
+
+
+                            input {
+                                width: 100%;
+                                border: none;
+                                outline: none;
+                            }
+                        }
+
+                        button {
+                            border-radius: convert(6);
+                            background: #226E65;
+                            border: none;
+                            width: 100%;
+                            height: convert(35.056);
+                            color: #FFF;
+                            margin-bottom: convert(28);
+                        }
+                    }
+                    .icons-contact{
+                        display: flex;
+                        gap: convert(35.06);
+                        align-items: center;
+                        justify-content: center;
+
+                        .phone{
+                            display: flex;
+                            gap: convert(10.52);
+                            align-items: center;
+                            justify-content: center;
+                            .icon{
+                                width: convert(19.631);
+                                height: convert(19.631);
+                                
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .contact-no{
+                                p{
+                                    color: var(--black, #000);
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+                                    margin:0;
+                                    padding:0;
+                                }
+                                a{
+                                    color: #226E65;
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+                                    text-decoration: none;
+
+                                }
+                            }
+                        }
+
+                        .email{
+                            display: flex;
+                            gap: convert(10.52);
+                            align-items: center;
+                            justify-content: center;
+                            .icon{
+                                width: convert(19.631);
+                                height: convert(19.631);
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .contact-mail{
+                                p{
+                                    color: var(--black, #000);
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+                                    margin:0;
+                                    padding:0;
+
+                                }
+                                a{
+                                    color: #226E65;
+                                    font-family: "Lato", sans-serif;
+                                    font-size: convert(9.114);
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    letter-spacing: convert(0.182);
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .pic{
+                        background-image: url('../images/bsckground.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: convert(382);
+                        height: convert(491);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .info{
+                            h3{
+                                color: var(--Neutral-100, #FFF);
+                                text-align: center;
+                                font-family: Graphik;
+                                font-size: convert(30);
+                                font-style: normal;
+                                font-weight: 600;
+                            }
+
+                            p{
+                                color: #226E65;
+                                text-align: center;
+                                font-family: Graphik;
+                                font-size: convert(24);
+                                font-style: normal;
+                                font-weight: 600;
+                                border-radius: 106px;
+                                border: convert(1) solid #FFF;
+                                background: #FFF;
+                                box-shadow: 0px convert(4) convert(5.3) 0px rgba(0, 0, 0, 0.25);
+                            
+                            }
+
+                            h2{
+                                color: var(--Neutral-100, #FFF);
+                                text-align: center;
+                                text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+                                font-family: Graphik;
+                                font-size: convert(36);
+                                font-style: normal;
+                                font-weight: 600;
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        footer{
+            margin-bottom: convert(34);
+            .container{
+
+                .contain-holder{
+
+                    border-radius: convert(41.336);
+                    background: #141C25;
+                    padding-top: convert(47);
+                    padding-bottom: convert(28);
+                    padding-left: 10.5128205128vw;
+                    padding-right: 5.1282051282vw;
+                    
+
+                    .ending{
+                        display:flex;
+                        width: 90%;
+                        justify-content: space-between;
+                        margin-top: convert(74);
+
+                        .copy{
+                            p{
+                                color: #FFF;
+                                font-family: "Lato", sans-serif;
+                                font-size: convert(12.881);
+                                font-style: normal;
+                                font-weight: 500;
+                            }
+                        }
+                        .list{
+                            
+                            ul{
+                                display:flex;
+                                gap: convert(25);
+                                
+                                li{
+                                    color:#FFF;
+                                    &::marker{
+                                        font-size: convert(10);
+        
+                                    }
+
+                                    a{
+                                        text-decoration: none;
+                                        color: #FFF;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(12.881);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                    .footer-holder{
+                        
+                        display: flex;
+                        gap:4.083333vw;
+
+                        .logo-pics{
+
+                            .logo{
+                                width: convert(339.987);
+                                height: convert(93.42);
+                                margin-bottom: convert(41);
+
+                                img{
+                                    width:100%;
+                                    height: 100%;
+                                }
+            
+                            }
+
+                            .pics{
+                                display: flex;
+                                gap: convert(17.12);
+
+
+                                .google{
+                                    width: convert(95.9);
+                                    height: convert(27.2);
+
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .apple{
+                                    width: convert(95.9);
+                                    height: convert(27.2);
+
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .lists{
+                            display:flex;
+
+                            ul{
+                                .special{
+                                    a{
+    
+                                        color: #FFF;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(12.881);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-decoration: none;
+                                    }
+                                }
+
+                                    
+                                li{
+                                    list-style-type: none;
+                                    margin-bottom: convert(16.72);
+                                        
+                                    a{
+                                        color: #A6A6A6;
+                                        font-family: "Lato", sans-serif;
+                                        font-size: convert(12.881);
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-decoration: none;
+                                            
+                                        &:hover,
+                                        &:active,
+                                        &:focus{
+                                            color:#FFF;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+
+                            .li3{
+                                margin-top: 0.516667vw;
+                                margin-left: convert(50);
+                                a{
+                                    border-radius: convert(4.96);
+                                    border: convert(0.827) solid #161C28;
+                                    background: #226E65;
+                                    display: flex;
+                                    padding: convert(9.921);
+
+                                    img{
+                                        width: convert(16.535);
+                                        height: convert(16.535);
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
