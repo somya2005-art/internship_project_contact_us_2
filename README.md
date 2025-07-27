@@ -2,7 +2,8 @@
 This is a Contact Us page designed for users to easily reach out to the company. The page is clean, responsive, and styled using Sass and Bootstrap, with smooth layout and form alignment across all devices.
 
 🔗 Live Preview
-👉 Check it out here
+
+👉 https://somya2005-art.github.io/internship_project_contact_us_2/
 
 🧰 Built With
 - HTML5
